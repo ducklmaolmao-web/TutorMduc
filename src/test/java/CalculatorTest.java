@@ -29,7 +29,18 @@ public class CalculatorTest {
         System.out.println("Test Case 1 OK: " + a + " + " + b + " = " + actualResult);
     }
 
+    @Test(description = "Kiểm tra cộng hai số dương (4 + 3 = 7)")
+    public void testAddPositiveNumbers11() {
+        int a = 4;
+        int b = 3;
+        int expectedResult = 7;
 
+        int actualResult = calculator.add(a, b);
+
+        // So sánh kết quả thực tế với kết quả mong đợi
+        Assert.assertEquals(actualResult, expectedResult, "Phép cộng hai số dương không chính xác.");
+        System.out.println("Test Case 1 OK: " + a + " + " + b + " = " + actualResult);
+    }
 
 
 }
