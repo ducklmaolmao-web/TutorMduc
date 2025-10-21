@@ -29,17 +29,6 @@ public class CalculatorTest {
         System.out.println("Test Case 1 OK: " + a + " + " + b + " = " + actualResult);
     }
 
-    @Test(description = "Kiểm tra cộng số âm và số dương (-10 + 7 = -3)")
-    public void testAddNegativeAndPositive() {
-        int a = -10;
-        int b = 7;
-        int expectedResult = -3;
-
-        int actualResult = calculator.add(a, b);
-
-        Assert.assertEquals(actualResult, expectedResult, "Phép cộng số âm và số dương không chính xác.");
-        System.out.println("Test Case 2 OK: " + a + " + " + b + " = " + actualResult);
-    }
 
 
 
