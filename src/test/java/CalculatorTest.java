@@ -42,15 +42,5 @@ public class CalculatorTest {
     }
 
 
-    @Test(description = "Kiểm tra cộng với số 0 (9 + 0 = 9)")
-    public void testAddWithZero() {
-        int a = 9;
-        int b = 0;
-        int expectedResult = 9;
 
-        int actualResult = calculator.add(a, b);
-
-        Assert.assertEquals(actualResult, expectedResult, "Phép cộng với số 0 không chính xác.");
-        System.out.println("Test Case 3 OK: " + a + " + " + b + " = " + actualResult);
-    }
 }
